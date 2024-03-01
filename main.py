@@ -7,11 +7,12 @@ while True:
     user_inp = input("Enter a word: ").upper()
     try: 
         list = [nato_dic[letter] for letter in user_inp]
-        
-        print(list)
-        break
+
     except KeyError:
         print("sorry, only letters of the alphabet")
+    else:
+        print(list)
+        break
     
     
     
